@@ -1,4 +1,6 @@
-name : "dbt_first_project"
-model-paths : ["models"]  #All sql code and transformations sit here in this models folder
-
+name: "dbt_first_project"
+model-paths: ["models"]  #All sql code and transformations sit here in this models folder.
+seed-paths: ["seeds"] #All csv files are stored in seeeds folder.And can be load to DWH.
+analysis-paths: ["analyses"] #This is just for analysis not to create as tables/views in WH
+macro-paths: ["macros"]
 
