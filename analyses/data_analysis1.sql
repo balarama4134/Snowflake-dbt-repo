@@ -1,0 +1,1 @@
+select * from DB_ECOMM.SCH_ECOMM.Users where GENDER = 'M'

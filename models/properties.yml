@@ -1,0 +1,19 @@
+sources:
+  - name: "guru_source"
+    database: "DB_ECOMM"
+    schema: "SCH_ECOMM"
+    tables:
+      - name: "USERS"
+
+models:
+  - name: "Guru"
+    config:
+      materialized: "table"
+
+  - name: "Guru2"
+    config:
+      materialized: "view"
+
+  - name: "Guru3"
+    config:
+      materialized: "table"
