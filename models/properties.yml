@@ -3,7 +3,8 @@ sources:
     database: "DB_ECOMM"
     schema: "SCH_ECOMM"
     tables:
-      - name: "USERS"
+      - name: USERS
+      - name: person_sales
 
 models:
   - name: "Guru"
