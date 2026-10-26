@@ -4,7 +4,7 @@
 
 {#1)Datatypes operations in jinja#}
 {#string#}
-{{"Guru"}}
+{{"guru"}}
 {#integer#} 
 {{22224232242}}
 {#multiple strings#}
@@ -21,7 +21,6 @@
 
 {#2)Varibales in jinja#}
 {%- set var1="Guru" -%}
-
 {%- set var2={"name":"Guru","age":27,"address":"Kadapa"} -%}
 {{var1,var2}}
 
@@ -32,6 +31,7 @@
 {%- else -%}
   {{"I am inside second block"}}
 {%endif%}
+
 {#2#}
 {%- if 1==2 -%}
  {{"I am inside Second block"}}
