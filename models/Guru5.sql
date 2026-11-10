@@ -4,4 +4,4 @@
     )
 }}
 
-select * from {{source("guru_source","USERS")}}
+select *,'{{invocation_id}}' as invocation_id from {{source("guru_source","USERS")}}
