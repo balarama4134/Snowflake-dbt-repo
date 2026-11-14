@@ -5,6 +5,9 @@ sources:
     tables:
       - name: USERS
       - name: person_sales
+      - name: PAYMENT_MODES
+      - name: dim_sales
+      - name: scd_eg
 
 models:
   - name: "Guru"

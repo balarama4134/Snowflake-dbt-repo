@@ -4,7 +4,7 @@
 
 {#1)Datatypes operations in jinja#}
 {#string#}
-{{"guru"}}
+{{'guru'}}
 {#integer#} 
 {{22224232242}}
 {#multiple strings#}
