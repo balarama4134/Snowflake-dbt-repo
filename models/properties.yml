@@ -8,6 +8,7 @@ sources:
       - name: PAYMENT_MODES
       - name: dim_sales
       - name: scd_eg
+      - name: PII_RAW
 
 models:
   - name: "Guru"
@@ -21,3 +22,18 @@ models:
   - name: "Guru3"
     config:
       materialized: "table"
+
+  - name: "pii_raw"
+    columns:
+      - name: ID
+        tests:
+          - unique
+          - not_null
+
+      - name: GENDER
+        tests:
+          - accepted_values:
+             values: ['Male', 'Female']
+
+
+      
