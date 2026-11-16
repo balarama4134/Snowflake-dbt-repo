@@ -1,0 +1,1 @@
+select * from {{source("guru_source","Marketing")}}

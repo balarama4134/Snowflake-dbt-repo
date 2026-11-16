@@ -1,0 +1,1 @@
+select * from {{source("Guru_project","raw_cust")}}

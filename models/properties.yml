@@ -1,8 +1,10 @@
 sources:
   - name: "guru_source"
+    description: "This is Guru's source from snowflake"
     database: "DB_ECOMM"
     schema: "SCH_ECOMM"
     tables:
+      - name: Marketing
       - name: USERS
       - name: person_sales
       - name: PAYMENT_MODES
@@ -23,17 +25,34 @@ models:
     config:
       materialized: "table"
 
+  
+
   - name: "pii_raw"
     columns:
       - name: ID
-        tests:
+        data_tests:
           - unique
           - not_null
 
       - name: GENDER
-        tests:
+        data_tests:
           - accepted_values:
-             values: ['Male', 'Female']
+              arguments:
+                values: ['Male', 'Female']
+      - name: ID 
+        data_tests:
+          - relationships:
+              arguments: 
+                to: ref('pii_raw_2')
+                field: ID
+
+  - name: "Marketing_stg"
+    columns:
+      - name: sales 
+        data_tests:
+           - sample_test
+
+    
 
 
       
