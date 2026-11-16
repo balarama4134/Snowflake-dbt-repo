@@ -1,0 +1,9 @@
+sources:
+  - name: "Guru_project"
+    description : "This is raw schema properties"
+    database: "DB_ECOMM"
+    schema: "RAW"
+    tables:
+      - name: raw_cust
+      - name: raw_orders
+      - name: raw_payments
