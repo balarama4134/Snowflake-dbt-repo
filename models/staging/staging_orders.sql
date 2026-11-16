@@ -1,3 +1,8 @@
+{{config(
+    database= 'STAGING',
+    schema = 'stg'
+)}}
+
 with raw_data as (
     select * from {{source("Guru_project","raw_orders")}}
 ),

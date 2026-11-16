@@ -1,3 +1,8 @@
+{{config(
+    database= 'Golden_layer_db',
+    schema = 'Analytics'
+)}}
+
 with customers as (
     select * from {{ref('staging_cust')}}
 ),
